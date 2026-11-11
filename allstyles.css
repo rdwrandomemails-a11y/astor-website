@@ -1,0 +1,178 @@
+.btn-whatsapp-pulse {
+	background: #25d366;
+	color: white;
+	position: fixed;
+	bottom: 150px;
+	right: 20px;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 0;
+	height: 0;
+	padding: 35px;
+	text-decoration: none;
+	border-radius: 50%;
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+	}
+	80% {
+		box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+	}
+}
+
+.btn-whatsapp-pulse-border {
+	bottom: 120px;
+	right: 20px;
+	animation-play-state: paused;
+}
+
+.btn-whatsapp-pulse-border::before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	padding: 25px;
+	border: 5px solid #25d366;
+	opacity: 0.75;
+	animation-name: pulse-border;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pulse-border {
+	0% {
+		padding: 25px;
+		opacity: 0.75;
+	}
+	75% {
+		padding: 50px;
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.btn-phone-pulse {
+	background: #25d366;
+	color: white;
+	position: fixed;
+	bottom: 250px; /* 50px higher than WhatsApp button */
+	right: 20px;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 0;
+	height: 0;
+	padding: 35px;
+	text-decoration: none;
+	border-radius: 50%;
+	animation-name: pulse-phone;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pulse-phone {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.5);
+	}
+	80% {
+		box-shadow: 0 0 0 14px rgba(0, 123, 255, 0);
+	}
+}
+
+.btn-phone-pulse-border {
+	bottom: 170px;
+	right: 20px;
+	animation-play-state: paused;
+}
+
+.btn-phone-pulse-border::before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	padding: 25px;
+	border: 5px solid #25d366;
+	opacity: 0.75;
+	animation-name: pulse-border-phone;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pulse-border-phone {
+	0% {
+		padding: 25px;
+		opacity: 0.75;
+	}
+	75% {
+		padding: 50px;
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+
+.locations-dropdown {
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title h2 {
+    font-family: 'Serif', sans-serif;
+    font-size: 2.5rem; /* Increased font size */
+    color: #000000; /* Black text */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.location-group {
+    margin-bottom: 40px;
+}
+
+.location-header {
+    text-align: center; /* Center align the location headers */
+    font-size: 1.8rem; /* Increased font size */
+    color: #000000;
+    margin-bottom: 15px;
+    /* border-bottom: 2px solid #ccc; */
+    padding-bottom: 5px;
+}
+
+.location-list p {
+    font-size: 1.3rem; /* Increased font size */
+    color: #000;
+    margin-bottom: 10px;
+    text-align: center; /* Center align location details */
+}
+
+.location-icon {
+    margin-right: 10px;
+    font-size: 1.5rem; /* Increased icon size */
+}
+
+.map-link {
+    color: #000000; /* Black link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.map-link:hover {
+    color: #555; /* Slightly darker on hover */
+}

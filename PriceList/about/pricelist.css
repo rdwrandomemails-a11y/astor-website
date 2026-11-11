@@ -1,0 +1,15 @@
+.image-row {
+    display: flex; /* Use flexbox to create a row layout */
+    justify-content: space-between; /* Space between the columns */
+    margin-top: 20px; /* Space above the row */
+}
+
+.image-column {
+    flex: 1; /* Make each column take equal space */
+    margin: 0 10px; /* Add margin between columns */
+}
+
+.img-fluid {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}

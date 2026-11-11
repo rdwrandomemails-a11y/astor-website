@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <title></title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overflow-x: hidden;
+        background-color: #fff;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      section {
+        position: relative;
+        overflow: hidden;
+      }
+      img.what {
+    position: absolute;
+    z-index: 1;
+}
+a.what, a.what:link, a.what:visited, a.what:hover, a.what:active {
+    color: #de4a4a;
+    text-decoration: none;
+    outline: 0;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+.btn-whatsapp-pulse {
+    background: #018c26;
+    color: white;
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    padding: 26px;
+    text-decoration: none;
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    z-index: 1111;
+}
+/* Define the animations */
+@keyframes pulse {
+0% {
+transform: scale(1);
+}
+50% {
+transform: scale(1.2);
+}
+100% {
+transform: scale(1);
+}
+}
+@keyframes color {
+0% {
+color: #135296; /* red */
+}
+50% {
+color: #96191d; /* brand red */
+}
+100% {
+color: #135296; /* black */
+}
+}
+h2 {
+    animation-name: pulse, color; /* apply multiple animations */
+    animation-duration: 2s, 4s; /* set durations for each animation */
+    animation-iteration-count: infinite, infinite;
+    animation-direction: alternate, alternate; /* alternate direction of color animation */
+}
+.btn-whatsapp-pulse-border {
+	bottom: 90px;
+	right: 20px;
+	animation-play-state: paused;
+  }
+.btn-whatsapp-pulse::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    padding: 25px;
+    border: 5px solid #018c26;
+    opacity: 0.75;
+    animation-name: pulse-border;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+@keyframes pulse-border {
+	0% {
+	  padding: 25px;
+	  opacity: 0.75;
+	}
+	75% {
+	  padding: 50px;
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 0;
+	}
+  }
+      @media (min-width: 960px) {
+        .container-fluid {
+          width: 70%;
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://wa.me/919319996122?text=Book%20a%20free%20pickup" target="_blank" rel="noreferrer" class="btn-whatsapp-pulse"> <img src="./what.png" alt="whatsapp icon" class="what"> </a>
+    <div class="container-fluid">
+      <a href="tel:+918130030385" target="_blank" >
+        <section>
+          <img src="./1.jpg" width="100%" height="auto" alt="" />
+          <img src="./2.jpg" width="100%" height="auto" alt="" />
+          <img src="./3.jpg" width="100%" height="auto" alt="" />
+          <span style="position:absolute; left:1000%">+918130030385</span>
+        </section>
+      </a>
+    </div>
+  </body>
+</html>

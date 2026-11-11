@@ -1,0 +1,129 @@
+      /* Importing custom fonts */
+      @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+      .logo {
+          display: inline-block;
+          /* Aligns logo text as an inline-block */
+          text-decoration: none;
+          /* Removes underline from the link */
+          color: #000;
+          /* Change to your preferred color */
+          font-family: 'Archivo Black', sans-serif;
+          /* Use Archivo Black for bold, impactful look */
+          font-weight: 300;
+          /* Makes text bold */
+          font-size: 25px;
+          /* Responsive font size based on viewport width */
+          text-align: center;
+          /* Center align the text */
+      }
+
+      .logo-text {
+          display: block;
+          /* Allows the text to behave like a block element */
+      }
+
+      /* For smaller devices, we adjust the font size */
+      @media (max-width: 768px) {
+          .logo {
+              font-size: 7vw;
+              /* Increase font size for mobile */
+          }
+      }
+
+      @media (max-width: 480px) {
+          .logo {
+              font-size: 15px;
+              /* Further increase font size for very small screens */
+          }
+      }
+
+      /* Keyframe for breathe animation */
+      @keyframes breathe {
+
+          0%,
+          100% {
+              opacity: 0;
+              /* Fully hidden */
+          }
+
+          50% {
+              opacity: 1;
+              /* Fully visible */
+          }
+      }
+
+
+
+
+
+
+      .locations-dropdown {
+          background-color: #ffffff;
+          /* White background */
+          border-radius: 10px;
+          padding: 30px;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .title h2 {
+          font-family: 'Serif', sans-serif;
+          font-size: 2.5rem;
+          /* Increased font size */
+          color: #000000;
+          /* Black text */
+          text-align: center;
+          margin-bottom: 20px;
+      }
+
+      .location-group {
+          margin-bottom: 40px;
+      }
+
+      .location-header {
+          text-align: center;
+          /* Center align the location headers */
+          font-size: 1.8rem;
+          /* Increased font size */
+          color: #000000;
+          margin-bottom: 15px;
+          /* border-bottom: 2px solid #ccc; */
+          padding-bottom: 5px;
+      }
+
+      .location-list p {
+          font-size: 1.3rem;
+          /* Increased font size */
+          color: #000;
+          margin-bottom: 10px;
+          text-align: center;
+          /* Center align location details */
+      }
+
+      .location-icon {
+          margin-right: 10px;
+          font-size: 1.5rem;
+          /* Increased icon size */
+      }
+
+      .map-link {
+          color: #000000;
+          /* Black link */
+          text-decoration: none;
+          font-weight: bold;
+          transition: color 0.3s ease;
+      }
+
+      .map-link:hover {
+          color: #555;
+          /* Slightly darker on hover */
+      }
+
+
+
+      
+
+
+    
+
+    

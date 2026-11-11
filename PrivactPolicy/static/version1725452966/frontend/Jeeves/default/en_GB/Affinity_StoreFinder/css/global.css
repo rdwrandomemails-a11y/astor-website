@@ -1,0 +1,43 @@
+#find-store-search {
+    max-width: 500px;
+}
+
+#find-store-search label {
+    display: block;
+}
+
+#find-store-search h3 {
+    display: block;
+}
+
+#find-store-search .input-box {
+    display: inline-block;
+    clear: both;
+    float: left;
+    padding-right: 10px;
+    width: 310px;
+}
+
+#find-store-search .input-box input {
+    min-width: 250px;
+}
+
+#find-store-search button {
+    padding: 13px 10px;
+    margin: 0;
+    vertical-align: top;
+}
+
+@media only screen and (max-width: 450px) {
+    #find-store-search label {
+        text-align: center;
+    }
+    #find-store-search .input-box {
+        width: calc(100% - 20px);
+        padding: 0 10px 10px;
+    }
+    #find-store-search button {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+}
